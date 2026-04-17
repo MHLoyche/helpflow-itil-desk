@@ -62,3 +62,11 @@ src/
 		interceptors/   # HTTP interceptors
 		constants/      # App constants
 ```
+
+## Project explanation
+```text
+This project is made to learn about ITIL and GUI programming. 
+I have tried to create an intuitive design, that is easy to understand and navigate.
+The project is created as a school project during my second schoolterm.
+This project is also my first attempt at using Angular and TypeScript.
+```
