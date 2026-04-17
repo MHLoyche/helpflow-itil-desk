@@ -1,9 +1,8 @@
-<main class="app-shell">
-  <section class="hero">
-    <p class="eyebrow">HelpFlow ITIL Desk</p>
-    <h1>Service desk workspace</h1>
-    <p class="description">
-      A clean starting point for your ITIL workflows, tickets, and service management tools.
-    </p>
-  </section>
-</main>
+<app-page-header></app-page-header>
+
+<div class="app-layout">
+  <app-sidebar></app-sidebar>
+  <main class="app-shell">
+    <router-outlet></router-outlet>
+  </main>
+</div>

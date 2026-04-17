@@ -1,59 +1,64 @@
-# HelpflowItilDesk
+# HelpFlow ITIL Desk
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Angular application for building an ITIL-style help desk interface and workflows.
 
-## Development server
+## Tech Stack
 
-To start a local development server, run:
+- Angular 21
+- TypeScript 5.9
+- Angular Material + CDK
+- Tailwind CSS 4 (available in the project)
+- Vitest (via `ng test`)
 
-```bash
-ng serve
-```
+## Prerequisites
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Node.js 20+
+- npm 10+
 
-## Code scaffolding
+## Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Install dependencies:
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
-
-To build the project run:
+2. Start the dev server:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3. Open:
 
-## Running unit tests
+```text
+http://localhost:4200
+```
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Available Scripts
+
+- Start local development server:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+- Build production bundle:
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Structure
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+src/
+	app/
+		core/           # Core services/singletons
+		features/       # Feature modules/pages
+		shared/         # Reusable UI components (e.g. stat-card)
+		models/         # Shared interfaces/types
+		guards/         # Route guards
+		interceptors/   # HTTP interceptors
+		constants/      # App constants
+```
